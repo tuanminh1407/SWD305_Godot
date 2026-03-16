@@ -4,26 +4,26 @@ extends Control
 ## Xử lý giao diện Đăng nhập và Đăng ký mở rộng.
 
 # Containers
-@onready var login_box: VBoxContainer = %LoginBox
-@onready var register_box: VBoxContainer = %RegisterBox
+@onready var login_box: VBoxContainer = $CenterContainer/PanelContainer/VBoxContainer/LoginBox
+@onready var register_box: VBoxContainer = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox
 
 # Login Fields
-@onready var email_input: LineEdit = %LoginBox/EmailInput
-@onready var password_input: LineEdit = %LoginBox/PasswordInput
-@onready var login_button: Button = %LoginBox/LoginButton
-@onready var to_register_button: LinkButton = %LoginBox/ToRegisterButton
+@onready var email_input: LineEdit = $CenterContainer/PanelContainer/VBoxContainer/LoginBox/EmailInput
+@onready var password_input: LineEdit = $CenterContainer/PanelContainer/VBoxContainer/LoginBox/PasswordInput
+@onready var login_button: Button = $CenterContainer/PanelContainer/VBoxContainer/LoginBox/LoginButton
+@onready var to_register_button: LinkButton = $CenterContainer/PanelContainer/VBoxContainer/LoginBox/ToRegisterButton
 
 # Register Fields
-@onready var reg_email_input: LineEdit = %RegisterBox/RegEmailInput
-@onready var reg_password_input: LineEdit = %RegisterBox/RegPasswordInput
-@onready var phone_input: LineEdit = %RegisterBox/PhoneInput
-@onready var grade_input: OptionButton = %RegisterBox/HBoxGrade/GradeInput
-@onready var region_input: OptionButton = %RegisterBox/HBoxRegion/RegionInput
-@onready var submit_register_button: Button = %RegisterBox/SubmitRegisterButton
-@onready var to_login_button: LinkButton = %RegisterBox/ToLoginButton
+@onready var reg_email_input: LineEdit = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/RegEmailInput
+@onready var reg_password_input: LineEdit = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/RegPasswordInput
+@onready var phone_input: LineEdit = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/PhoneInput
+@onready var grade_input: OptionButton = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxGrade/GradeInput
+@onready var region_input: OptionButton = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxRegion/RegionInput
+@onready var submit_register_button: Button = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/SubmitRegisterButton
+@onready var to_login_button: LinkButton = $CenterContainer/PanelContainer/VBoxContainer/RegisterBox/ToLoginButton
 
 # Shared
-@onready var status_label: Label = $CenterContainer/VBoxContainer/StatusLabel
+@onready var status_label: Label = $CenterContainer/PanelContainer/VBoxContainer/StatusLabel
 
 func _ready():
 	# Kết nối tín hiệu

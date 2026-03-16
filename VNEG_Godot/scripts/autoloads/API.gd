@@ -104,7 +104,6 @@ func get_grammar_progress() -> Dictionary:
 	return await fetch("/api/grammar/progress/me")
 
 # ==============================================================================
-<<<<<<< HEAD
 # ADMIN ANALYTICS API
 # ==============================================================================
 func admin_get_user_stats() -> Dictionary:
@@ -207,7 +206,7 @@ func staff_get_report_detail(report_id: int) -> Dictionary:
 func staff_resolve_report(report_id: int, action: String, reason: String = "", status: String = "resolved") -> Dictionary:
 	var body = {"action": action, "reason": reason, "status": status}
 	return await fetch("/api/staff/reports/" + str(report_id) + "/resolve", HTTPClient.METHOD_PATCH, body)
-=======
+
 # TEAM TASKS (STUDY & TEST) API
 # ==============================================================================
 
@@ -286,4 +285,3 @@ func upload_image(file_path: String) -> Dictionary:
 	var data = json.data if parse_err == OK else res_body
 	
 	return {"ok": res_code >= 200 and res_code < 300, "data": data}
->>>>>>> upstream/main

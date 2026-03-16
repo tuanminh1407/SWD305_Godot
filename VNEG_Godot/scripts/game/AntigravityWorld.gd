@@ -5,11 +5,11 @@ extends Node2D
 ## và ra lệnh đảo ngược trọng lực vật lý cho Node Player.
 
 @onready var ui_canvas: CanvasLayer = $UI
-@onready var question_label: Label = $UI/QuestionBox/QuestionLabel
-@onready var choices_box: VBoxContainer = $UI/QuestionBox/ChoicesBox
-@onready var stars_label: Label = $UI/TopHUD/StarsLabel
-@onready var hp_label: Label = $UI/TopHUD/HPLabel
-@onready var timer_label: Label = $UI/TopHUD/TimerLabel
+@onready var question_label: Label = $UI/Control/QuestionPanel/QuestionBox/QuestionLabel
+@onready var choices_box: VBoxContainer = $UI/Control/QuestionPanel/QuestionBox/ChoicesBox
+@onready var stars_label: Label = $UI/Control/MarginContainer/TopPanel/TopHUD/StarsLabel
+@onready var hp_label: Label = $UI/Control/MarginContainer/TopPanel/TopHUD/HPLabel
+@onready var timer_label: Label = $UI/Control/MarginContainer/TopPanel/TopHUD/TimerLabel
 
 @onready var player: CharacterBody2D = $Player # Tham chiếu tới nhân vật
 

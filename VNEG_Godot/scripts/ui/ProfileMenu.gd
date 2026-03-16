@@ -3,20 +3,20 @@ extends Control
 ##
 ## Xử lý giao diện Hồ sơ (Profile) và hiển thị Cây Ngữ Pháp.
 
-@onready var user_info_label: Label = $VBoxContainer/TopPanel/UserInfoLabel
-@onready var stats_label: Label = $VBoxContainer/TopPanel/StatsLabel
-@onready var grammar_tree_container: VBoxContainer = $VBoxContainer/ScrollContainer/GrammarList
-@onready var status_label: Label = $VBoxContainer/TopPanel/StatusLabel
+@onready var user_info_label: Label = $VBoxContainer/HBoxContent/ProfilePanel/VBox/UserInfoLabel
+@onready var stats_label: Label = $VBoxContainer/HBoxContent/ProfilePanel/VBox/StatsLabel
+@onready var grammar_tree_container: VBoxContainer = $VBoxContainer/HBoxContent/GrammarPanel/VBox/ScrollContainer/GrammarList
+@onready var status_label: Label = $VBoxContainer/HBoxContent/ProfilePanel/VBox/StatusLabel
 
 func _ready():
-	if has_node("BackButton"):
-		$BackButton.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MainMenu.tscn"))
+	if has_node("VBoxContainer/HeaderPanel/Header/BackButton"):
+		$VBoxContainer/HeaderPanel/Header/BackButton.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MainMenu.tscn"))
 		
 	# Add Logout button programmatically next to back button if it exists
 	var btn_logout = Button.new()
 	btn_logout.text = "Đăng xuất"
 	btn_logout.pressed.connect(_on_logout_pressed)
-	$VBoxContainer/TopPanel.add_child(btn_logout)
+	$VBoxContainer/HBoxContent/ProfilePanel/VBox.add_child(btn_logout)
 		
 	if AuthManager.is_logged_in():
 		_update_user_info_ui()
@@ -28,7 +28,7 @@ func _update_user_info_ui() -> void:
 	user_info_label.text = "Hồ sơ: " + user.get("email", "Unknown") + "\nLớp: " + str(user.get("grade", "?")) + " | Vùng: " + user.get("region", "")
 	
 	# Add Avatar UI elements if they don't exist
-	var top_panel = $VBoxContainer/TopPanel
+	var top_panel = $VBoxContainer/HBoxContent/ProfilePanel/VBox
 	if not top_panel.has_node("AvatarContainer"):
 		var avatar_hb = HBoxContainer.new()
 		avatar_hb.name = "AvatarContainer"
@@ -84,7 +84,7 @@ func _on_avatar_file_selected(path: String) -> void:
 	var res = await API.upload_image(path)
 	if res["ok"]:
 		var new_url = res["data"]["url"]
-		var url_input = get_node_or_null("VBoxContainer/TopPanel/AvatarContainer/VBoxContainer/UrlInput")
+		var url_input = get_node_or_null("VBoxContainer/HBoxContent/ProfilePanel/VBox/AvatarContainer/VBoxContainer/UrlInput")
 		if url_input: url_input.text = new_url
 		_on_save_avatar_pressed(new_url)
 	else:
@@ -109,7 +109,7 @@ func _load_avatar(url: String) -> void:
 			
 			if err == OK:
 				var tex = ImageTexture.create_from_image(img)
-				var rect = get_node_or_null("VBoxContainer/TopPanel/AvatarContainer/AvatarRect")
+				var rect = get_node_or_null("VBoxContainer/HBoxContent/ProfilePanel/VBox/AvatarContainer/AvatarRect")
 				if rect: rect.texture = tex
 		http.queue_free()
 	)

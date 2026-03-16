@@ -4,21 +4,21 @@ extends Control
 ## Xử lý giao diện Quản lý Nhóm (Teams) trong Godot.
 ## Gắn script này vào Node Root của màn hình TeamsMenu.tscn.
 
-@onready var team_list_container: VBoxContainer = $HBox/LeftPanel/ScrollContainer/TeamList
-@onready var create_team_name_input: LineEdit = $HBox/RightPanel/CreateBox/NameInput
-@onready var create_team_desc_input: LineEdit = $HBox/RightPanel/CreateBox/DescInput
-@onready var create_btn: Button = $HBox/RightPanel/CreateBox/CreateButton
-@onready var join_code_input: LineEdit = $HBox/RightPanel/JoinBox/CodeInput
-@onready var join_btn: Button = $HBox/RightPanel/JoinBox/JoinButton
-@onready var status_label: Label = $HBox/RightPanel/StatusLabel
+@onready var team_list_container: VBoxContainer = $VBoxContainer/MainPanel/HBox/LeftPanel/ScrollContainer/TeamList
+@onready var create_team_name_input: LineEdit = $VBoxContainer/MainPanel/HBox/RightPanel/CreateBox/NameInput
+@onready var create_team_desc_input: LineEdit = $VBoxContainer/MainPanel/HBox/RightPanel/CreateBox/DescInput
+@onready var create_btn: Button = $VBoxContainer/MainPanel/HBox/RightPanel/CreateBox/CreateButton
+@onready var join_code_input: LineEdit = $VBoxContainer/MainPanel/HBox/RightPanel/JoinBox/CodeInput
+@onready var join_btn: Button = $VBoxContainer/MainPanel/HBox/RightPanel/JoinBox/JoinButton
+@onready var status_label: Label = $VBoxContainer/MainPanel/HBox/RightPanel/StatusLabel
 
 func _ready():
 	create_btn.pressed.connect(_on_create_team_pressed)
 	join_btn.pressed.connect(_on_join_team_pressed)
 	
 	# Nút Back về MainMenu
-	if has_node("BackButton"):
-		$BackButton.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MainMenu.tscn"))
+	if has_node("VBoxContainer/HeaderPanel/Header/BackButton"):
+		$VBoxContainer/HeaderPanel/Header/BackButton.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/MainMenu.tscn"))
 		
 	_load_my_teams()
 
