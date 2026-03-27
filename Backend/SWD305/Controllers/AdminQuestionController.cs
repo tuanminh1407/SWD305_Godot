@@ -97,17 +97,17 @@ namespace SWD305.Controllers
             return Ok(question);
         }
 
-        // DELETE
+        // SOFT DELETE
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var question = await _context.Questions.FindAsync(id);
             if (question == null) return NotFound();
 
-            _context.Questions.Remove(question);
+            question.IsActive = false;
             await _context.SaveChangesAsync();
 
-            return Ok("Deleted successfully");
+            return Ok("Soft-deleted successfully");
         }
     }
 

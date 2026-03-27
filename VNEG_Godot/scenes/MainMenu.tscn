@@ -1,78 +1,130 @@
-[gd_scene load_steps=2 format=3 uid="uid://mainmenu1234"]
+[gd_scene load_steps=4 format=3 uid="uid://mainmenu1234"]
 
 [ext_resource type="Script" path="res://scripts/ui/MainMenu.gd" id="1_mainmenu"]
+[ext_resource type="Theme" uid="uid://d3u6x0y8wkpjk" path="res://assets/ui/premium_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" uid="uid://df58o622g0c5j" path="res://assets/bg/space_bg.tres" id="3_bg"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=1350192781]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 script = ExtResource("1_mainmenu")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 50.0
-offset_top = 50.0
-offset_right = -50.0
-offset_bottom = -50.0
+offset_left = 60.0
+offset_top = 40.0
+offset_right = -60.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 20
 
-[node name="Header" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HeaderPanel" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"HeaderPanel"
 
-[node name="WelcomeLabel" type="Label" parent="VBoxContainer/Header"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
-text = "Xin chào!"
-
-[node name="ScoreLabel" type="Label" parent="VBoxContainer/Header"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Điểm: 0"
-
-[node name="DashboardNav" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="BtnTeams" type="Button" parent="VBoxContainer/DashboardNav"]
-layout_mode = 2
-text = "Quản lý Nhóm"
-
-[node name="BtnProfile" type="Button" parent="VBoxContainer/DashboardNav"]
-layout_mode = 2
-text = "Hồ sơ & Ngữ pháp"
-
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+[node name="Header" type="HBoxContainer" parent="VBoxContainer/HeaderPanel"]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="MapContainer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="WelcomeLabel" type="Label" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "👋 Xin chào, Chiến binh Ngữ pháp!"
+
+[node name="ScoreLabel" type="Label" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "⭐ Điểm: 0"
+
+[node name="DashboardNav" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="BtnTeams" type="Button" parent="VBoxContainer/DashboardNav"]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "👥 Quản lý Nhóm"
+
+[node name="BtnProfile" type="Button" parent="VBoxContainer/DashboardNav"]
+custom_minimum_size = Vector2(250, 45)
+layout_mode = 2
+text = "📚 Hồ sơ & Ngữ pháp"
+
+[node name="MainPanel" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="VBoxContainer/MapContainer"]
+[node name="HBoxContent" type="HBoxContainer" parent="VBoxContainer/MainPanel"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Chọn Hành Tinh (Map)"
+theme_override_constants/separation = 30
 
-[node name="GamesContainer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="MapContainer" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBoxContent"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="VBoxContainer/MainPanel/HBoxContent/MapContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 22
+text = "🪐 Chọn Hành Tinh (Map)"
+
+[node name="MapScroll" type="ScrollContainer" parent="VBoxContainer/MainPanel/HBoxContent/MapContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="VBoxContainer/GamesContainer"]
+[node name="MapList" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBoxContent/MapContainer/MapScroll"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Chọn Trò Chơi"
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
 
-[node name="PlayButton" type="Button" parent="VBoxContainer/GamesContainer"]
+[node name="GamesContainer" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBoxContent"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="VBoxContainer/MainPanel/HBoxContent/GamesContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 22
+text = "🎮 Chọn Trò Chơi"
+
+[node name="GameScroll" type="ScrollContainer" parent="VBoxContainer/MainPanel/HBoxContent/GamesContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GameList" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBoxContent/GamesContainer/GameScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="PlayButton" type="Button" parent="VBoxContainer/MainPanel/HBoxContent/GamesContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
 disabled = true
-text = "Chơi game này"
+text = "▶️ CHƠI NGAY"

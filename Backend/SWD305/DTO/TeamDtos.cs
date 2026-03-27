@@ -21,5 +21,10 @@ namespace SWD305.DTO
     {
         public int UserId { get; set; }
     }
+
+    public class AddMemberDto
+    {
+        public int UserId { get; set; }
+    }
 }
 

@@ -296,6 +296,25 @@ namespace SWD305.Controllers
             if (user == null) return NotFound("User not found");
             return Ok(user);
         }
+        [HttpGet("search")]
+        public async Task<IActionResult> Search([FromQuery] string q)
+        {
+            if (string.IsNullOrWhiteSpace(q) || q.Length < 3)
+                return BadRequest("Search query must be at least 3 characters.");
+
+            var users = await _context.Users
+                .Where(u => u.IsActive == true && u.Email.Contains(q))
+                .Take(10)
+                .Select(u => new
+                {
+                    u.Id,
+                    u.Email,
+                    u.AvatarUrl
+                })
+                .ToListAsync();
+
+            return Ok(users);
+        }
     }
 }
 

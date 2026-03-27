@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://antigravity1234"]
+[gd_scene load_steps=6 format=3 uid="uid://antigravity1234"]
 
 [ext_resource type="Script" path="res://scripts/game/AntigravityWorld.gd" id="1_game"]
 [ext_resource type="Script" path="res://scripts/game/Player.gd" id="2_player"]
+[ext_resource type="Theme" uid="uid://d3u6x0y8wkpjk" path="res://assets/ui/premium_theme.tres" id="3_theme"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
 size = Vector2(40, 60)
@@ -12,60 +13,97 @@ size = Vector2(1152, 40)
 [node name="AntigravityWorld" type="Node2D"]
 script = ExtResource("1_game")
 
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -33.0
+offset_top = -26.0
+offset_right = 1178.0
+offset_bottom = 675.0
+color = Color(0.04, 0.04, 0.08, 1)
+metadata/_edit_lock_ = true
+
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="TopHUD" type="HBoxContainer" parent="UI"]
+[node name="Control" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_theme")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Control"]
+layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 50.0
+offset_bottom = 80.0
 grow_horizontal = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="TopPanel" type="PanelContainer" parent="UI/Control/MarginContainer"]
+layout_mode = 2
+
+[node name="TopHUD" type="HBoxContainer" parent="UI/Control/MarginContainer/TopPanel"]
+layout_mode = 2
 alignment = 1
 
-[node name="StarsLabel" type="Label" parent="UI/TopHUD"]
+[node name="StarsLabel" type="Label" parent="UI/Control/MarginContainer/TopPanel/TopHUD"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_font_sizes/font_size = 28
 text = "⭐ 0"
 horizontal_alignment = 1
 
-[node name="TimerLabel" type="Label" parent="UI/TopHUD"]
+[node name="TimerLabel" type="Label" parent="UI/Control/MarginContainer/TopPanel/TopHUD"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
-text = "00:00"
+theme_override_colors/font_color = Color(0, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "⏳ 00:00"
 horizontal_alignment = 1
 
-[node name="HPLabel" type="Label" parent="UI/TopHUD"]
+[node name="HPLabel" type="Label" parent="UI/Control/MarginContainer/TopPanel/TopHUD"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
 theme_override_font_sizes/font_size = 24
 text = "♥️♥️♥️"
 horizontal_alignment = 1
 
-[node name="QuestionBox" type="VBoxContainer" parent="UI"]
+[node name="QuestionPanel" type="PanelContainer" parent="UI/Control"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -150.0
-offset_right = 300.0
-offset_bottom = 150.0
+offset_left = -350.0
+offset_top = -180.0
+offset_right = 350.0
+offset_bottom = 220.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="QuestionLabel" type="Label" parent="UI/QuestionBox"]
+[node name="QuestionBox" type="VBoxContainer" parent="UI/Control/QuestionPanel"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
+theme_override_constants/separation = 20
+
+[node name="QuestionLabel" type="Label" parent="UI/Control/QuestionPanel/QuestionBox"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
 text = "Câu hỏi..."
 horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="ChoicesBox" type="VBoxContainer" parent="UI/QuestionBox"]
+[node name="ChoicesBox" type="VBoxContainer" parent="UI/Control/QuestionPanel/QuestionBox"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 10
+theme_override_constants/separation = 15
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(576, 500)
@@ -79,7 +117,15 @@ offset_left = -20.0
 offset_top = -30.0
 offset_right = 20.0
 offset_bottom = 30.0
-color = Color(0, 0.490196, 1, 1)
+color = Color(0.421, 0.898, 1, 1)
+
+[node name="PlayerGlow" type="ColorRect" parent="Player"]
+offset_left = -24.0
+offset_top = -34.0
+offset_right = 24.0
+offset_bottom = 34.0
+color = Color(0.42, 0.9, 1, 0.3)
+show_behind_parent = true
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(576, 620)
@@ -92,7 +138,7 @@ offset_left = -576.0
 offset_top = -20.0
 offset_right = 576.0
 offset_bottom = 20.0
-color = Color(0.25098, 0.25098, 0.25098, 1)
+color = Color(0.3, 0.25, 0.8, 1)
 
 [node name="Ceiling" type="StaticBody2D" parent="."]
 position = Vector2(576, 20)
@@ -105,4 +151,4 @@ offset_left = -576.0
 offset_top = -20.0
 offset_right = 576.0
 offset_bottom = 20.0
-color = Color(0.25098, 0.25098, 0.25098, 1)
+color = Color(0.3, 0.25, 0.8, 1)

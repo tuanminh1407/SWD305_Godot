@@ -1,129 +1,99 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SWD305\\",
+  "WorkspaceRootPath": "C:\\Users\\TUAN MINH\\OneDrive\\Documents\\SWD392\\SWD305_Godot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\swd305.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\swd305.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\security\\passwordhashing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\security\\passwordhashing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\security\\sessionauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\security\\sessionauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\UserDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\security\\sessiontokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\security\\sessiontokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\Question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\AdminUserDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\AdminUserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\adminuserdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\adminuserdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\CreateGameDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\SWD305.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Security\\SessionTokenAuthHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Security\\SessionAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\vnegsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\vnegsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Security\\PasswordHashing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\usergrammarprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\usergrammarprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\SubmitGameRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\updategamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\updategamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\submitgamerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\submitgamerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\UserGrammarProgress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\creategamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\creategamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\admingamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\admingamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\AdminMapController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\adminmapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\adminmapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\VnegSystemContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\MapController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\UpdateGameDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\controllers\\adminquestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\controllers\\adminquestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\QuestionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\gameerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\gameerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\AdminGameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\mapdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\mapdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\GameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\AdminQuestionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\models\\gameerrorgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\models\\gameerrorgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\GameError.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|d:\\swd305\\swd305\\dto\\startgamerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3174CC36-28E7-44C5-8C5A-32594D8E66C5}|SWD305\\SWD305.csproj|solutionrelative:swd305\\dto\\startgamerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\MapDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SWD305\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\CreateQuestionDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\Models\\GameErrorGrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SWD305\\SWD305\\DTO\\StartGameRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -137,37 +107,30 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserDtos.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\UserDtos.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\UserDtos.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\UserDtos.cs",
-              "RelativeToolTip": "SWD305\\DTO\\UserDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T18:44:22.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T18:44:22.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Question.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\Question.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\Question.cs",
-              "RelativeToolTip": "SWD305\\Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T16:26:43.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "AdminUserDtos.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\AdminUserDtos.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\AdminUserDtos.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\AdminUserDtos.cs",
-              "RelativeToolTip": "SWD305\\DTO\\AdminUserDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T15:02:01.311Z"
@@ -177,118 +140,98 @@
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Program.cs",
-              "RelativeDocumentMoniker": "SWD305\\Program.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Program.cs",
-              "RelativeToolTip": "SWD305\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T04:43:29.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T04:43:29.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\AdminUserController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\AdminUserController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\AdminUserController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\AdminUserController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwDMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T15:02:12.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "CreateGameDto.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\CreateGameDto.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\CreateGameDto.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\CreateGameDto.cs",
-              "RelativeToolTip": "SWD305\\DTO\\CreateGameDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:49:33.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "SWD305.csproj",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\SWD305.csproj",
-              "RelativeDocumentMoniker": "SWD305\\SWD305.csproj",
               "ToolTip": "D:\\SWD305\\SWD305\\SWD305.csproj",
-              "RelativeToolTip": "SWD305\\SWD305.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-19T04:37:11.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T04:37:11.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAJgBAAAAAAAAAAAkwLkBAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-02-19T15:26:43.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T15:26:43.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "SessionTokenAuthHandler.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Security\\SessionTokenAuthHandler.cs",
-              "RelativeDocumentMoniker": "SWD305\\Security\\SessionTokenAuthHandler.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Security\\SessionTokenAuthHandler.cs",
-              "RelativeToolTip": "SWD305\\Security\\SessionTokenAuthHandler.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T18:54:26.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "SessionAuth.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Security\\SessionAuth.cs",
-              "RelativeDocumentMoniker": "SWD305\\Security\\SessionAuth.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Security\\SessionAuth.cs",
-              "RelativeToolTip": "SWD305\\Security\\SessionAuth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T18:54:30.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "PasswordHashing.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Security\\PasswordHashing.cs",
-              "RelativeDocumentMoniker": "SWD305\\Security\\PasswordHashing.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Security\\PasswordHashing.cs",
-              "RelativeToolTip": "SWD305\\Security\\PasswordHashing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T18:54:33.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "SubmitGameRequest.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\SubmitGameRequest.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\SubmitGameRequest.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\SubmitGameRequest.cs",
-              "RelativeToolTip": "SWD305\\DTO\\SubmitGameRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:47:06.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 13,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\UserController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\UserController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\UserController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAkwFcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T06:03:42.783Z"
@@ -298,93 +241,77 @@
               "DocumentIndex": 14,
               "Title": "UserGrammarProgress.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\UserGrammarProgress.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\UserGrammarProgress.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\UserGrammarProgress.cs",
-              "RelativeToolTip": "SWD305\\Models\\UserGrammarProgress.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T06:59:37.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\appsettings.json",
-              "RelativeDocumentMoniker": "SWD305\\appsettings.json",
               "ToolTip": "D:\\SWD305\\SWD305\\appsettings.json",
-              "RelativeToolTip": "SWD305\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-03T06:49:24.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\Game.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\Game.cs",
-              "RelativeToolTip": "SWD305\\Models\\Game.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvw0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:43:49.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "AdminMapController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\AdminMapController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\AdminMapController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\AdminMapController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\AdminMapController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA5wHYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T05:05:52.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "SWD305\\appsettings.Development.json",
               "ToolTip": "D:\\SWD305\\SWD305\\appsettings.Development.json",
-              "RelativeToolTip": "SWD305\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-03T14:26:11.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "VnegSystemContext.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\VnegSystemContext.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\VnegSystemContext.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\VnegSystemContext.cs",
-              "RelativeToolTip": "SWD305\\Models\\VnegSystemContext.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAD4vzUAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:41:42.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "MapController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\MapController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\MapController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\MapController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\MapController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T05:16:57.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "UpdateGameDto.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\UpdateGameDto.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\UpdateGameDto.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\UpdateGameDto.cs",
-              "RelativeToolTip": "SWD305\\DTO\\UpdateGameDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:49:52.024Z"
@@ -394,116 +321,96 @@
               "DocumentIndex": 22,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\QuestionController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\QuestionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T05:18:31.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "AdminGameController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\AdminGameController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\AdminGameController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\AdminGameController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\AdminGameController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:50:15.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "GameController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\GameController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\GameController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\GameController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:45:41.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "AdminQuestionController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\AdminQuestionController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\AdminQuestionController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\AdminQuestionController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\AdminQuestionController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIBJwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:51:43.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "GameError.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\GameError.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\GameError.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\GameError.cs",
-              "RelativeToolTip": "SWD305\\Models\\GameError.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:53:54.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MapDtos.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\MapDtos.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\MapDtos.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\MapDtos.cs",
-              "RelativeToolTip": "SWD305\\DTO\\MapDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T05:05:18.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "CreateQuestionDto.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\CreateQuestionDto.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\CreateQuestionDto.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\CreateQuestionDto.cs",
-              "RelativeToolTip": "SWD305\\DTO\\CreateQuestionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:51:19.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "SWD305\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "SWD305\\Controllers\\WeatherForecastController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:43:36.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "GameErrorGrammar.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\Models\\GameErrorGrammar.cs",
-              "RelativeDocumentMoniker": "SWD305\\Models\\GameErrorGrammar.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\Models\\GameErrorGrammar.cs",
-              "RelativeToolTip": "SWD305\\Models\\GameErrorGrammar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:53:57.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "StartGameRequest.cs",
               "DocumentMoniker": "D:\\SWD305\\SWD305\\DTO\\StartGameRequest.cs",
-              "RelativeDocumentMoniker": "SWD305\\DTO\\StartGameRequest.cs",
               "ToolTip": "D:\\SWD305\\SWD305\\DTO\\StartGameRequest.cs",
-              "RelativeToolTip": "SWD305\\DTO\\StartGameRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T04:46:32.329Z"

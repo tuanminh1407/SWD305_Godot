@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace SWD305.Models;
@@ -18,6 +18,8 @@ public partial class Game
     public int? OrderIndex { get; set; }
 
     public bool? IsPremium { get; set; }
+
+    public bool? IsActive { get; set; }
 
     public virtual ICollection<GameSession> GameSessions { get; set; } = new List<GameSession>();
 

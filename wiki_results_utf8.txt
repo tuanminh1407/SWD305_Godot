@@ -1,0 +1,9 @@
+﻿Hà_Nội.ogg -> https://upload.wikimedia.org/wikipedia/commons/0/01/Hà_Nội.ogg
+Saigon.ogg -> https://upload.wikimedia.org/wikipedia/commons/f/f9/Saigon.ogg
+Vi-hanoi-m-ba.ogg -> https://upload.wikimedia.org/wikipedia/commons/7/7d/Vi-hanoi-m-ba.ogg
+Vi-hanoi-m-mười.ogg -> https://upload.wikimedia.org/wikipedia/commons/3/33/Vi-hanoi-m-mười.ogg
+Vietnam.ogg -> https://upload.wikimedia.org/wikipedia/commons/c/cb/Vietnam.ogg
+Bien_Hoa_Southern.ogg -> https://upload.wikimedia.org/wikipedia/commons/f/f4/Bien_Hoa_Southern.ogg
+Vi-hanoi-m-nói.ogg -> https://upload.wikimedia.org/wikipedia/commons/4/4f/Vi-hanoi-m-nói.ogg
+Vi-hanoi-m-nay.ogg -> https://upload.wikimedia.org/wikipedia/commons/2/27/Vi-hanoi-m-nay.ogg
+Vi-hanoi-m-rất.ogg -> https://upload.wikimedia.org/wikipedia/commons/4/44/Vi-hanoi-m-rất.ogg

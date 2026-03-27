@@ -1,21 +1,50 @@
-# .gitignore for .NET and Godot project
-
+# =========================
 # .NET / Visual Studio
+# =========================
 bin/
 obj/
 .vs/
 *.user
 *.userosscache
 *.sln.docstates
-.vscode/
 
+# Rider / VSCode
+.vscode/
+.idea/
+
+# =========================
 # Godot
+# =========================
+
+# Godot cache (IMPORTANT)
 .godot/
-*.cache
-*.import/
+.import/
+
+# Godot export
+export.cfg
 export_presets.cfg
 
-# OS specific
+# Mono / C# build
+.mono/
+data_*/
+
+# =========================
+# Logs / temp
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# OS files
+# =========================
+.DS_Store
 Thumbs.db
 Desktop.ini
-.DS_Store
+
+# =========================
+# Backup / auto save
+# =========================
+*.bak
+*.swp
+*~

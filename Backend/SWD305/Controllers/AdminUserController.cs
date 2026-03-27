@@ -86,8 +86,8 @@ namespace SWD305.Controllers
                 return BadRequest("Role is required.");
 
             var normalizedRole = dto.Role.Trim().ToLowerInvariant();
-            if (normalizedRole is not ("admin" or "user"))
-                return BadRequest("Role must be 'admin' or 'user'.");
+            if (normalizedRole is not ("admin" or "staff" or "user"))
+                return BadRequest("Role must be 'admin', 'staff', or 'user'.");
 
             var user = await _context.Users.FindAsync(id);
             if (user == null) return NotFound("User not found");

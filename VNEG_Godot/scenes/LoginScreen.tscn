@@ -1,15 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://loginscreenuid1234"]
+[gd_scene load_steps=4 format=3 uid="uid://loginscreenuid1234"]
 
 [ext_resource type="Script" path="res://scripts/ui/LoginScreen.gd" id="1_loginscreen"]
+[ext_resource type="Theme" uid="uid://d3u6x0y8wkpjk" path="res://assets/ui/premium_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" uid="uid://df58o622g0c5j" path="res://assets/bg/space_bg.tres" id="3_bg"]
+>>>>>>> main
 
-[node name="LoginScreen" type="Control"]
+[node name="LoginScreen" type="Control" unique_id=1256462904]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 script = ExtResource("1_loginscreen")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -19,79 +33,91 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-custom_minimum_size = Vector2(350, 0)
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(450, 0)
 layout_mode = 2
-theme_override_constants/separation = 15
 
-[node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
+theme_override_constants/separation = 20
+
+[node name="VBoxHeader" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxHeader"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.701961, 0.678431, 1, 1)
+theme_override_font_sizes/font_size = 42
 text = "VNEG System"
 horizontal_alignment = 1
 
-[node name="LoginBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+[node name="Subtitle" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxHeader"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 18
+text = "Đăng nhập để tiếp tục"
+horizontal_alignment = 1
+
+[node name="LoginBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 15
 
-[node name="EmailInput" type="LineEdit" parent="CenterContainer/VBoxContainer/LoginBox"]
+[node name="EmailInput" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/LoginBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
 placeholder_text = "Email"
 
-[node name="PasswordInput" type="LineEdit" parent="CenterContainer/VBoxContainer/LoginBox"]
+[node name="PasswordInput" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/LoginBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
 placeholder_text = "Mật khẩu"
 secret = true
 
-[node name="LoginButton" type="Button" parent="CenterContainer/VBoxContainer/LoginBox"]
-custom_minimum_size = Vector2(0, 45)
+[node name="LoginButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/LoginBox"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
-text = "Đăng nhập"
+text = "🚀 Đăng nhập"
 
-[node name="ToRegisterButton" type="LinkButton" parent="CenterContainer/VBoxContainer/LoginBox"]
+[node name="ToRegisterButton" type="LinkButton" parent="CenterContainer/PanelContainer/VBoxContainer/LoginBox"]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Chưa có tài khoản? Đăng ký ngay"
 
-[node name="RegisterBox" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+[node name="RegisterBox" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 15
 
-[node name="RegEmailInput" type="LineEdit" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="RegEmailInput" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
 placeholder_text = "Email đăng ký"
 
-[node name="RegPasswordInput" type="LineEdit" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="RegPasswordInput" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
 placeholder_text = "Mật khẩu"
 secret = true
 
-[node name="PhoneInput" type="LineEdit" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="PhoneInput" type="LineEdit" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
 placeholder_text = "Số điện thoại"
 
-[node name="HBoxGrade" type="HBoxContainer" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="HBoxGrade" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/RegisterBox/HBoxGrade"]
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxGrade"]
 layout_mode = 2
-text = "Khối lớp: "
+text = "Khối lớp:"
 
-[node name="GradeInput" type="OptionButton" parent="CenterContainer/VBoxContainer/RegisterBox/HBoxGrade"]
+[node name="GradeInput" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxGrade"]
+
 layout_mode = 2
 size_flags_horizontal = 3
 selected = 0
 item_count = 12
 popup/item_0/text = "Lớp 1"
+popup/item_0/id = 0
 popup/item_1/text = "Lớp 2"
 popup/item_1/id = 1
 popup/item_2/text = "Lớp 3"
@@ -115,38 +141,39 @@ popup/item_10/id = 10
 popup/item_11/text = "Lớp 12"
 popup/item_11/id = 11
 
-[node name="HBoxRegion" type="HBoxContainer" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="HBoxRegion" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/RegisterBox/HBoxRegion"]
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxRegion"]
 layout_mode = 2
-text = "Vùng miền: "
+text = "Vùng miền:"
 
-[node name="RegionInput" type="OptionButton" parent="CenterContainer/VBoxContainer/RegisterBox/HBoxRegion"]
+[node name="RegionInput" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox/HBoxRegion"]
+
 layout_mode = 2
 size_flags_horizontal = 3
 selected = 0
 item_count = 3
 popup/item_0/text = "Miền Bắc"
+popup/item_0/id = 0
 popup/item_1/text = "Miền Trung"
 popup/item_1/id = 1
 popup/item_2/text = "Miền Nam"
 popup/item_2/id = 2
 
-[node name="SubmitRegisterButton" type="Button" parent="CenterContainer/VBoxContainer/RegisterBox"]
-custom_minimum_size = Vector2(0, 45)
+[node name="SubmitRegisterButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
-text = "Xác nhận Đăng ký"
+text = "✨ Đăng ký ngay"
 
-[node name="ToLoginButton" type="LinkButton" parent="CenterContainer/VBoxContainer/RegisterBox"]
+[node name="ToLoginButton" type="LinkButton" parent="CenterContainer/PanelContainer/VBoxContainer/RegisterBox"]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Đã có tài khoản? Đăng nhập"
 
-[node name="StatusLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="StatusLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
 horizontal_alignment = 1
 autowrap_mode = 2

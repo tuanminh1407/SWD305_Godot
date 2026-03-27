@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://profilemenu1234"]
+[gd_scene load_steps=4 format=3 uid="uid://profilemenu1234"]
 
 [ext_resource type="Script" path="res://scripts/ui/ProfileMenu.gd" id="1_profile"]
+[ext_resource type="Theme" uid="uid://d3u6x0y8wkpjk" path="res://assets/ui/premium_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" uid="uid://df58o622g0c5j" path="res://assets/bg/space_bg.tres" id="3_bg"]
 
 [node name="ProfileMenu" type="Control"]
 layout_mode = 3
@@ -9,53 +11,113 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 script = ExtResource("1_profile")
 
-[node name="BackButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 120.0
-offset_bottom = 60.0
-text = "Quay lại"
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 50.0
-offset_top = 80.0
-offset_right = -50.0
-offset_bottom = -50.0
+offset_left = 60.0
+offset_top = 40.0
+offset_right = -60.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 20
 
-[node name="TopPanel" type="VBoxContainer" parent="VBoxContainer"]
+[node name="HeaderPanel" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
-alignment = 1
+theme_type_variation = &"HeaderPanel"
 
-[node name="UserInfoLabel" type="Label" parent="VBoxContainer/TopPanel"]
+[node name="Header" type="HBoxContainer" parent="VBoxContainer/HeaderPanel"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="VBoxContainer/HeaderPanel/Header"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "⬅️ Quay lại"
+
+[node name="Space" type="Control" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "Hồ sơ & Ngữ pháp"
+
+[node name="HBoxContent" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 40
+
+[node name="ProfilePanel" type="PanelContainer" parent="VBoxContainer/HBoxContent"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="VBoxContainer/HBoxContent/ProfilePanel"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContent/ProfilePanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 22
+text = "👤 Thông tin cá nhân"
+horizontal_alignment = 1
+
+[node name="UserInfoLabel" type="Label" parent="VBoxContainer/HBoxContent/ProfilePanel/VBox"]
+custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Hồ sơ: ..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="StatsLabel" type="Label" parent="VBoxContainer/TopPanel"]
+[node name="StatsLabel" type="Label" parent="VBoxContainer/HBoxContent/ProfilePanel/VBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
 
-[node name="StatusLabel" type="Label" parent="VBoxContainer/TopPanel"]
+[node name="StatusLabel" type="Label" parent="VBoxContainer/HBoxContent/ProfilePanel/VBox"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.9, 0.5, 1)
+horizontal_alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="GrammarPanel" type="PanelContainer" parent="VBoxContainer/HBoxContent"]
 layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="VBoxContainer/HBoxContent/GrammarPanel"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContent/GrammarPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
 theme_override_font_sizes/font_size = 22
-text = "Tiến độ học ngữ pháp (Grammar Tree)"
+text = "📚 Tiến độ học ngữ pháp (Grammar Tree)"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContent/GrammarPanel/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="GrammarList" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="GrammarList" type="VBoxContainer" parent="VBoxContainer/HBoxContent/GrammarPanel/VBox/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 10

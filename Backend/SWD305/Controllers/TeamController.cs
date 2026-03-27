@@ -147,6 +147,13 @@ namespace SWD305.Controllers
                 JoinDate = DateTime.Now
             };
             _context.TeamMembers.Add(ownerMember);
+
+            // If user is just 'user', upgrade them to 'team_owner'
+            if (me.Role == "user")
+            {
+                me.Role = "team_owner";
+            }
+
             await _context.SaveChangesAsync();
 
             return Ok(new

@@ -90,5 +90,31 @@ namespace SWD305.Controllers
 
             return Ok("Team deleted successfully.");
         }
+        [HttpPost("{teamId:int}/add-member")]
+        public async Task<IActionResult> AddMember(int teamId, [FromBody] AddMemberDto dto)
+        {
+            var me = await GetMe();
+            var team = await _context.Teams.FindAsync(teamId);
+
+            if (team == null) return NotFound("Team not found");
+            if (team.OwnerId != me!.Id) return Forbid("You are not the owner of this team.");
+
+            var already = await _context.TeamMembers
+                .AnyAsync(tm => tm.TeamId == teamId && tm.UserId == dto.UserId);
+            if (already) return BadRequest("User is already a member of this team.");
+
+            var member = new TeamMember
+            {
+                TeamId = teamId,
+                UserId = dto.UserId,
+                Role = "member",
+                JoinDate = DateTime.Now
+            };
+
+            _context.TeamMembers.Add(member);
+            await _context.SaveChangesAsync();
+
+            return Ok("Member added successfully.");
+        }
     }
 }

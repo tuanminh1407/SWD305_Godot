@@ -105,8 +105,10 @@ namespace SWD305.Controllers
 
                 bool isCorrectChoice = false;
 
-                // qInfo.Answer might be a straightforward exact string like "1" or a JSON array like "[1]"
-                if (qInfo.Answer == item.SelectedAnswerId.ToString())
+                // qInfo.Answer might be a straightforward exact string like "1", text like "apple", or a JSON array like "[1]" or "[\"apple\"]"
+                string userAnsStr = item.SelectedAnswer ?? item.SelectedAnswerId?.ToString() ?? "";
+
+                if (string.Equals(qInfo.Answer, userAnsStr, StringComparison.OrdinalIgnoreCase))
                 {
                     isCorrectChoice = true;
                 }
@@ -114,10 +116,30 @@ namespace SWD305.Controllers
                 {
                     try
                     {
-                        var answerArray = JsonSerializer.Deserialize<List<int>>(qInfo.Answer);
-                        if (answerArray != null && answerArray.Contains(item.SelectedAnswerId))
+                        using var doc = JsonDocument.Parse(qInfo.Answer);
+                        if (doc.RootElement.ValueKind == JsonValueKind.Array)
                         {
-                            isCorrectChoice = true;
+                            foreach (var element in doc.RootElement.EnumerateArray())
+                            {
+                                if (element.ToString().Equals(userAnsStr, StringComparison.OrdinalIgnoreCase))
+                                {
+                                    isCorrectChoice = true;
+                                    break;
+                                }
+                            }
+                            
+                            // Backwards compatibility for exact int match if the new string mapping is falsy
+                            if (!isCorrectChoice && item.SelectedAnswerId.HasValue)
+                            {
+                                foreach (var element in doc.RootElement.EnumerateArray())
+                                {
+                                    if (element.ValueKind == JsonValueKind.Number && element.GetInt32() == item.SelectedAnswerId.Value)
+                                    {
+                                        isCorrectChoice = true;
+                                        break;
+                                    }
+                                }
+                            }
                         }
                     }
                     catch
@@ -288,6 +310,7 @@ namespace SWD305.Controllers
     public class UserAnswerDto
     {
         public int QuestionId { get; set; }
-        public int SelectedAnswerId { get; set; }
+        public int? SelectedAnswerId { get; set; }
+        public string? SelectedAnswer { get; set; }
     }
 }

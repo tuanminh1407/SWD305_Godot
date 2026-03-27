@@ -107,8 +107,18 @@ func _on_register_pressed() -> void:
 	set_loading(true)
 	show_status("Đang tạo tài khoản...", Color.WHITE)
 	
+	
 	# Gọi API Register với tất cả các trường
-	var response = await API.register(email, password, grade, region_val, "🐉", phone)
+	var response = await API.register(
+	email,
+	password,
+	phone,
+	grade,
+	region_val,
+	"🐉"
+)
+	print("STATUS:", response.status)
+	print("DATA:", response.data)
 	
 	set_loading(false)
 	

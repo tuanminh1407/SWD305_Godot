@@ -1,0 +1,20 @@
+﻿{
+    "value":  [
+                  {
+                      "id":  0,
+                      "name":  "SÆ¡ Cáº¥p",
+                      "orderIndex":  1
+                  },
+                  {
+                      "id":  1,
+                      "name":  "Trung Cáº¥p",
+                      "orderIndex":  2
+                  },
+                  {
+                      "id":  2,
+                      "name":  "Cao Cáº¥p",
+                      "orderIndex":  3
+                  }
+              ],
+    "Count":  3
+}

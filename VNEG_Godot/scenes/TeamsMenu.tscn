@@ -1,95 +1,139 @@
-[gd_scene load_steps=2 format=3 uid="uid://teamsmenu1234"]
+[gd_scene load_steps=4 format=3 uid="uid://teamsmenu1234"]
 
 [ext_resource type="Script" path="res://scripts/ui/TeamsMenu.gd" id="1_teams"]
+[ext_resource type="Theme" uid="uid://d3u6x0y8wkpjk" path="res://assets/ui/premium_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" uid="uid://df58o622g0c5j" path="res://assets/bg/space_bg.tres" id="3_bg"]
 
-[node name="TeamsMenu" type="Control"]
+[node name="LoginScreen" type="Control" unique_id=1256462904]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 script = ExtResource("1_teams")
 
-[node name="BackButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 120.0
-offset_bottom = 60.0
-text = "Quay lại"
-
-[node name="HBox" type="HBoxContainer" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 50.0
-offset_top = 80.0
-offset_right = -50.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 40.0
+offset_right = -60.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="HeaderPanel" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderPanel"
+
+[node name="Header" type="HBoxContainer" parent="VBoxContainer/HeaderPanel"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="VBoxContainer/HeaderPanel/Header"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "⬅️ Quay lại"
+
+[node name="Space" type="Control" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="VBoxContainer/HeaderPanel/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "Quản lý Nhóm"
+
+[node name="MainPanel" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/MainPanel"]
+layout_mode = 2
 theme_override_constants/separation = 50
 
-[node name="LeftPanel" type="VBoxContainer" parent="HBox"]
+[node name="LeftPanel" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 15
 
-[node name="Label" type="Label" parent="HBox/LeftPanel"]
+[node name="Label" type="Label" parent="VBoxContainer/MainPanel/HBox/LeftPanel"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Nhóm của tôi"
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 22
+text = "👥 Nhóm của tôi"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBox/LeftPanel"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/MainPanel/HBox/LeftPanel"]
 layout_mode = 2
+text = "Vùng miền: "
+
+[node name="TeamList" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBox/LeftPanel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = 10
 
-[node name="TeamList" type="VBoxContainer" parent="HBox/LeftPanel/ScrollContainer"]
+[node name="RightPanel" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBox"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+theme_override_font_sizes/font_size = 18
+text = "Xác nhận Đăng ký"
 
-[node name="RightPanel" type="VBoxContainer" parent="HBox"]
+[node name="JoinBox" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBox/RightPanel"]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 30
+theme_override_constants/separation = 10
 
-[node name="JoinBox" type="VBoxContainer" parent="HBox/RightPanel"]
+[node name="Label" type="Label" parent="VBoxContainer/MainPanel/HBox/RightPanel/JoinBox"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="HBox/RightPanel/JoinBox"]
-layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
 theme_override_font_sizes/font_size = 20
-text = "Tham gia bằng Code"
+text = "🔑 Tham gia bằng Code"
 
-[node name="CodeInput" type="LineEdit" parent="HBox/RightPanel/JoinBox"]
+[node name="CodeInput" type="LineEdit" parent="VBoxContainer/MainPanel/HBox/RightPanel/JoinBox"]
 layout_mode = 2
 placeholder_text = "Nhập mã Mời"
 
-[node name="JoinButton" type="Button" parent="HBox/RightPanel/JoinBox"]
+[node name="JoinButton" type="Button" parent="VBoxContainer/MainPanel/HBox/RightPanel/JoinBox"]
 layout_mode = 2
 text = "Tham Gia"
 
-[node name="CreateBox" type="VBoxContainer" parent="HBox/RightPanel"]
+[node name="CreateBox" type="VBoxContainer" parent="VBoxContainer/MainPanel/HBox/RightPanel"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="HBox/RightPanel/CreateBox"]
+[node name="Label" type="Label" parent="VBoxContainer/MainPanel/HBox/RightPanel/CreateBox"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
 theme_override_font_sizes/font_size = 20
-text = "Tạo nhóm mới"
+text = "✨ Tạo nhóm mới"
 
-[node name="NameInput" type="LineEdit" parent="HBox/RightPanel/CreateBox"]
+[node name="NameInput" type="LineEdit" parent="VBoxContainer/MainPanel/HBox/RightPanel/CreateBox"]
 layout_mode = 2
 placeholder_text = "Tên nhóm"
 
-[node name="DescInput" type="LineEdit" parent="HBox/RightPanel/CreateBox"]
+[node name="DescInput" type="LineEdit" parent="VBoxContainer/MainPanel/HBox/RightPanel/CreateBox"]
 layout_mode = 2
 placeholder_text = "Mô tả nhóm"
 
-[node name="CreateButton" type="Button" parent="HBox/RightPanel/CreateBox"]
+[node name="CreateButton" type="Button" parent="VBoxContainer/MainPanel/HBox/RightPanel/CreateBox"]
 layout_mode = 2
 text = "Tạo Nhóm"
 
-[node name="StatusLabel" type="Label" parent="HBox/RightPanel"]
+[node name="StatusLabel" type="Label" parent="VBoxContainer/MainPanel/HBox/RightPanel"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
+autowrap_mode = 2

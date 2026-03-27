@@ -98,28 +98,17 @@ namespace SWD305.Controllers
             return Ok(topic);
         }
 
+        // SOFT DELETE
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var topic = await _context.GrammarTopics
-                .Include(t => t.InverseParent)
-                .Include(t => t.QuestionGrammars)
-                .Include(t => t.GameErrorGrammars)
-                .Include(t => t.UserGrammarProgresses)
-                .FirstOrDefaultAsync(t => t.Id == id);
-
+            var topic = await _context.GrammarTopics.FindAsync(id);
             if (topic == null) return NotFound("Grammar topic not found");
 
-            if (topic.InverseParent.Any())
-                return BadRequest("Cannot delete grammar topic because it has child topics.");
-
-            if (topic.QuestionGrammars.Any() || topic.GameErrorGrammars.Any() || topic.UserGrammarProgresses.Any())
-                return BadRequest("Cannot delete grammar topic because it is in use.");
-
-            _context.GrammarTopics.Remove(topic);
+            topic.IsActive = false;
             await _context.SaveChangesAsync();
 
-            return Ok("Deleted successfully");
+            return Ok("Soft-deleted successfully");
         }
     }
 }

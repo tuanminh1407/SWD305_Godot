@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
@@ -73,6 +73,9 @@ public partial class VnegSystemContext : DbContext
             entity.Property(e => e.IsPremium)
                 .HasDefaultValue(false)
                 .HasColumnName("is_premium");
+            entity.Property(e => e.IsActive)
+                .HasDefaultValue(true)
+                .HasColumnName("is_active");
             entity.Property(e => e.MapId).HasColumnName("map_id");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)

@@ -143,7 +143,7 @@ namespace SWD305.Controllers
             });
         }
 
-        // DELETE
+        // SOFT DELETE
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -151,10 +151,10 @@ namespace SWD305.Controllers
             if (game == null)
                 return NotFound();
 
-            _context.Games.Remove(game);
+            game.IsActive = false;
             await _context.SaveChangesAsync();
 
-            return Ok("Deleted successfully");
+            return Ok("Soft-deleted successfully");
         }
     }
 
